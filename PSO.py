@@ -2,10 +2,10 @@ import numpy as np
 from TestFunc import TestFunc
 
 class PSO:
-	def __init__(self, test_func, repeat=5, maxit=100, npop=50, c1=1.4962, c2=1.4962, w=0.7298, wdamp=1.0):
+	def __init__(self, test_func, repeat=5, maxit=100, npop=50, nvar=50, c1=1.4962, c2=1.4962, w=0.7298, wdamp=1.0):
 	
 		self.costfunc = test_func.costfunc
-		self.nvar = test_func.nvar
+		self.nvar = nvar
 		self.varmin = test_func.varmin
 		self.varmax = test_func.varmax
 		

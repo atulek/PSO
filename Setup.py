@@ -3,12 +3,13 @@ from PSO import PSO
 from TestFunc import TestFunc
 import matplotlib.pyplot as plt
 
-# DE Default parametreleri
+# PSO Default parametreleri
 pso = PSO(
     test_func=TestFunc().Sphere(),
-    repeat=5,
-    maxit=2500,
+    repeat=1,
+    maxit=1000,
     npop=50,
+    nvar=50,
     c1=1.4962,
     c2=1.4962,
     w=0.7298,
@@ -19,9 +20,9 @@ bestcost = pso.run()
 #result = de.run()
 #print(gbest['cost'])
 
-# Optimum DE sonuç grafiği çizdiriliyor
+# Optimum PSO sonuç grafiği çizdiriliyor
 plt.semilogy(bestcost)
-plt.xlim(0, 2500)
+plt.xlim(0, 1000)
 plt.xlabel('İterasyonlar')
 plt.ylabel('Maliyet Fonksiyonu')
 plt.title('Particle Swarm Optimization (PSO)')

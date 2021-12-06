@@ -4,9 +4,8 @@ class TestFunc():               # Test fonksiyonlarının tutulduğu sınıf
 
     # Problem default parametreleri
     costfunc = None             # Setup.py dosyasında belirlenen maliyet fonk.
-    nvar = 50                   # Problem boyutu
-    varmin = -5.0               # Problem minimum default sınır
-    varmax = 5.0                # Problem minimum default sınır
+    varmin = None               # Problem minimum default sınır
+    varmax = None               # Problem minimum default sınır
 
     # Sphere test fonksiyonu
     def Sphere(self):
